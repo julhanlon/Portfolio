@@ -24,15 +24,15 @@ a {
 }
 
 #footer {
-  padding-top: 25px;
+  padding-top: 350px;
   flex-direction: column;
   text-align: center;
   padding-bottom: calc(env(safe-area-inset-bottom, 20px) + 20px);
   width: 100%;
 }
 
-.container {
-  margin-top: 150px;
+#portfolio {
+  padding-top: 150px;
 }
 
 .portImg {
