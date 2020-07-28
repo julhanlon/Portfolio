@@ -1,24 +1,26 @@
 body {
-  font-family: "Muli", sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
 
+#mainPage {
+  background-image: ;
 }
 
 #opening {
 float: left;
-  margin-top: 220px;
+margin-top: 220px;
 }
 
 .text {
  
   font-size: 1.5rem;
-  font-variant: small-caps;
   margin-bottom: 10px;
 }
 
 a {
-  color: black;
-  font-size: 1.5rem;
-  margin: 10px;
+  color: gray;
+  font-size: 1.2rem;
+  margin: 20px;
 }
 
 #footer {
@@ -42,44 +44,14 @@ a {
 }
 
 .navbar {
-  display: flex;
-  justify-content: flex-end;
-  font-variant: small-caps;
+  display: inline-block;
+ align-items: flex-start;
 }
 
 #rowTitle {
-  font-variant: small-caps;
   margin-bottom: 10px;
 }
 
-#myPic {
-  width: 430px;
-  height: 600px;
-  filter: grayscale(100%);
-  border: black solid 2px;
-  margin-left: 50px;
-  margin-top: 40px;
-  border: 5px solid darkgrey;
-  box-shadow: 5px 10px darkgrey;
-  margin-bottom: 4rem;
-}
-
-.card {
-  height: 900px;
-  width: 500px;
-  background-color: black;
-}
-
-#aboutme {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 150px;
-}
-
-#myInfo {
-  color: darkgrey;
-  margin: 20px;
-}
 
 #git {
   filter: invert(100%);
@@ -96,14 +68,6 @@ p {
   font-size: 1.2rem;
 }
 
-h3,
-h2 {
-  font-variant: small-caps;
-}
-
-#myPic {
-  animation: moves 2s linear infinite;
-}
 
 @keyframes moves {
   5%,
