@@ -2,8 +2,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#name {
+  margin: 20px;
+}
+
 #mainPage {
-  background-image: ;
+  /* background-image: ; */
 }
 
 #opening {
@@ -69,13 +73,76 @@ p {
 }
 
 
-@keyframes moves {
-  5%,
-  70% {
-    transform: translate(15px, 0) skew(0deg);
-  }
-  5%,
-  80% {
-    transform: translate(-15px, 0) skew(0deg);
-  }
+#landing-img img {
+  margin-right: 80px;
+  z-index: 5;
+  right: 10%;
+  top: 20%;
+  width: 70vh;
+  height: auto;
+  position: absolute;
+  overflow: hidden;
+  filter: drop-shadow(10px 10px 10px #c5c5c5);
+  animation: swing 6s infinite ease-in-out;
+}
+
+@keyframes swing {
+  0%, 100% { transform: rotate(-180deg);}
+  /* 20% {transform: scale(.98);} */
+  50% {transform: rotate(180deg);}
+  /* 80% {transform: scale(.98);} */
+}
+
+#loader {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  z-index: 150;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: load-out 4s;
+  animation: load-out 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#loader img {
+  display: inline-block;
+  height: 30vh;
+  top: 50%;
+  right: 50%;
+  -webkit-animation: wiggle 3s;
+  animation: wiggle 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes load-out {
+  0% {opacity:1;}
+  20% {opacity:1;}
+  50% {opacity:1;}
+  90% {opacity:0.5;} 
+  99% {height: 100%;}
+  100% {display: none; height: 0%; opacity:0;}
+}
+
+@-webkit-keyframes wiggle {
+  0% {opacity:1; transform: rotate(-10deg);}
+  20% {opacity:1; transform: scale(.98);}
+  50% {opacity:1; transform: rotate(10deg);}
+  90% {opacity:0.5; transform: scale(.98);} 
+  100% {opacity:0; transform: rotate(-10deg);}
+}
+
+@keyframes wiggle {
+  0% {opacity:1; transform: rotate(-10deg);}
+  20% {opacity:1; transform: scale(.98);}
+  50% {opacity:1; transform: rotate(10deg);}
+  90% {opacity:0.5; transform: scale(.98);} 
+  100% {opacity:0; transform: rotate(-10deg);}
 }
